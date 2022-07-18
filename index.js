@@ -48,25 +48,25 @@ let carrito = []
 
 let catalogoProductos = [];
 
-catalogoProductos.push(new Producto(1, "Almohadon de pana ", 700, 0, "40x40 cm", img= 'imagenes/almohadonpana.jpg'));
-catalogoProductos.push(new Producto(2, "Almohadon de tusor ", 700, 0, "40x40 cm", img= 'imagenes/almtusor.jpg'));
-catalogoProductos.push(new Producto(3, "Almohadon de gasa ", 800, 0, "50x30 cm",img= 'imagenes/gasaalm.jpg'));
-catalogoProductos.push(new Producto(4, "Almohada para cama ", 1300, 0, "50x40 cm", img= 'imagenes/almcama.jpg'));
-catalogoProductos.push(new Producto(5, "Cortinas de gasa ", 13000, 0, "200x150 cm", img= 'imagenes/cortinas.jpg'));
-catalogoProductos.push(new Producto(6, "Cortinas de tusor ", 15000, 0, "200x150 cm", img= 'imagenes/cortinas2.jpg'));
-catalogoProductos.push(new Producto(7, "Cortinas de lino ", 17000, 0, "200x150 cm"));
-catalogoProductos.push(new Producto(8, "Cortinas de Blackout ", 18000, 0, "200x150 cm"));
-catalogoProductos.push(new Producto(9, "Cortinas de baño ", 5000, 0, "180x150 cm",img='imagenes/coortbaño.jpg'));
-catalogoProductos.push(new Producto(10, "Mantel de tusor ", 5000, 0, "200x150 cm",img= 'imagenes/manteltuss.jpg'));
-catalogoProductos.push(new Producto(11, "Mantel waffle ", 7000, 0, "200x150 cm"));
-catalogoProductos.push(new Producto(12, "Mantel gasa ", 5000, 0, "200x150 cm",img= 'imagenes/gasam.jpg'));
-catalogoProductos.push(new Producto(13, "Delantal ", 1500, 0, "70x40 cm",img= 'imagenes/delantal.jpg'));
-catalogoProductos.push(new Producto(14, "Juego de servilletas x 8 ", 4000, 0, "40x40 cm",img= 'imagenes/servilleta.jpg'));
-catalogoProductos.push(new Producto(15, "Juego sabanas para cama king ", 20000, 0, "200 x 200 cm",img= 'imagenes/cama.jpg'));
-catalogoProductos.push(new Producto(16, "Juego sabanas para cama Queen ", 18000, 0, "160 x 200 cm",img= 'imagenes/cama2.jpg'));
-catalogoProductos.push(new Producto(17, "Juego sabanas para cama 2 plazas y media ", 14000, 0, "140 x 190cm",img= 'imagenes/cama.jpg'));
-catalogoProductos.push(new Producto(18, "Juego sabanas para cama 1 plaza y media ", 10000, 0, "190 x 090 cm",img= 'imagenes/cama1p.jpg'));
-catalogoProductos.push(new Producto(19, "Pie de cama ", 9000, 0, "200 x 150 cm",img= 'imagenes/piecama.jpg'));
+catalogoProductos.push(new Producto(1, "Almohadon de pana ", 700, 1, "40x40 cm", img= 'imagenes/almohadonpana.jpg'));
+catalogoProductos.push(new Producto(2, "Almohadon de tusor ", 700, 1, "40x40 cm", img= 'imagenes/almtusor.jpg'));
+catalogoProductos.push(new Producto(3, "Almohadon de gasa ", 800, 1, "50x30 cm",img= 'imagenes/gasaalm.jpg'));
+catalogoProductos.push(new Producto(4, "Almohada para cama ", 1300, 1, "50x40 cm", img= 'imagenes/almcama.jpg'));
+catalogoProductos.push(new Producto(5, "Cortinas de gasa ", 13000, 1, "200x150 cm", img= 'imagenes/cortinas.jpg'));
+catalogoProductos.push(new Producto(6, "Cortinas de tusor ", 15000, 1, "200x150 cm", img= 'imagenes/cortinas2.jpg'));
+catalogoProductos.push(new Producto(7, "Cortinas de lino ", 17000, 1, "200x150 cm"));
+catalogoProductos.push(new Producto(8, "Cortinas de Blackout ", 18000, 1, "200x150 cm"));
+catalogoProductos.push(new Producto(9, "Cortinas de baño ", 5000, 1, "180x150 cm",img='imagenes/coortbaño.jpg'));
+catalogoProductos.push(new Producto(10, "Mantel de tusor ", 5000, 1, "200x150 cm",img= 'imagenes/manteltuss.jpg'));
+catalogoProductos.push(new Producto(11, "Mantel waffle ", 7000, 1, "200x150 cm"));
+catalogoProductos.push(new Producto(12, "Mantel gasa ", 5000, 1, "200x150 cm",img= 'imagenes/gasam.jpg'));
+catalogoProductos.push(new Producto(13, "Delantal ", 1500, 1, "70x40 cm",img= 'imagenes/delantal.jpg'));
+catalogoProductos.push(new Producto(14, "Juego de servilletas x 8 ", 4000, 1, "40x40 cm",img= 'imagenes/servilleta.jpg'));
+catalogoProductos.push(new Producto(15, "Juego sabanas para cama king ", 20000, 1, "200 x 200 cm",img= 'imagenes/cama.jpg'));
+catalogoProductos.push(new Producto(16, "Juego sabanas para cama Queen ", 18000, 1, "160 x 200 cm",img= 'imagenes/cama2.jpg'));
+catalogoProductos.push(new Producto(17, "Juego sabanas para cama 2 plazas y media ", 14000, 1, "140 x 190cm",img= 'imagenes/cama.jpg'));
+catalogoProductos.push(new Producto(18, "Juego sabanas para cama 1 plaza y media ", 10000, 1, "190 x 090 cm",img= 'imagenes/cama1p.jpg'));
+catalogoProductos.push(new Producto(19, "Pie de cama ", 9000, 1, "200 x 150 cm",img= 'imagenes/piecama.jpg'));
 
 //////
 

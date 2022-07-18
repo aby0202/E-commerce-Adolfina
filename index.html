@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <!-------INICIO DEL NAVBAR-------->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse p-3 justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Perfil.html">Nosotras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discografia.html">Contacto</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!------FIN DEL NAVBAR------>
+
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-center texto" id="texto">
+            </div>
+
+            <div class="col-md-6 h-30 p-0">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner w-100 h-100">
+                        <div class="carousel-item active">
+                            <img src="imagenes/cama2.jpg"
+                                alt="chica acostada en una cama con su gata entre almohadones" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/cama.jpg"
+                                alt="cama azul,con almohadones de tusor y pie de cama mostaza" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/cortinas.jpg" alt="Cortina de gasa blanca" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/cortbaño.jpg" alt="Cortina de baño rosa y blanca" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/cort.jpg" alt="Cortina de gasa colo arena" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/delantal.jpg" alt="Delantal azul y rosa" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/platodesitio.jpg"
+                                alt="Platode sitio azul y blanco, con una servilleta rosa y estrellitas de madera" />
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FIN DEL CARROUSEL -->
+
+    <div class="row" id="contenedor-productos"></div>
+
+    <button id="boton-carrito" class="botonCarrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span>
+    </button>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor"></div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>

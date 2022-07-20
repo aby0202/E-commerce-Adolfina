@@ -22,12 +22,11 @@ const contenedorCarrito = document.getElementById('carrito-contenedor')
 
 const botonVaciar = document.getElementById('vaciar-carrito')
 
-document.addEventListener('DOMContentLoaded', () => {
-    if(localStorage.getItem('carrito')){
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        actualizarCarrito()
-    }
+    document.addEventListener('DOMContentLoaded', () => {
+    localStorage.getItem('carrito') && (carrito = JSON.parse(localStorage.getItem('carrito')))
+    actualizarCarrito();
 })
+//operador logico AND
 
 
 botonVaciar.addEventListener('click', () => {
@@ -105,9 +104,8 @@ const agregarCarrito = (prodId) => {
     const existe = carrito.some (prod => prod.id === prodId)
     if(existe){
         const prod = carrito.map (prod => {
-            if(prod.id === prodId){
-                prod.cantidad++
-            }
+            prod.id === prodId && prod.cantidad++
+            
         })
     }else{
     const item =catalogoProductos.find ((prod) => prod.id === prodId)
@@ -115,6 +113,13 @@ const agregarCarrito = (prodId) => {
     }
     actualizarCarrito()
 }
+// existe ?? const prod = carrito.map (prod => {
+//             prod.id === prodId && prod.cantidad++}) 
+//     : const item =catalogoProductos.find ((prod) => prod.id === prodId)
+//     carrito.push(item);
+//     actualizarCarrito()
+// dudas sobre const y operadores ternarios
+
 
 const eliminarDelCarrito = (prodId) => {
     const item =carrito.find((prod) => prod.id === prodId)
@@ -144,12 +149,5 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length
     console.log(carrito)
     precioTotal.innerText = carrito.reduce ((acc , prod) => acc + prod.cantidad * prod.precio, 0 )
+    //rest parameters
 }
-
-
-
-
-
-
-
-

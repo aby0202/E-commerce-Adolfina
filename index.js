@@ -1,4 +1,3 @@
-
 let titulo = document.getElementById("header");
 titulo.innerHTML = "<h1>Adolfina Decoracion</h1>";
 
@@ -7,7 +6,7 @@ texto.innerHTML = "<h2>¿Quienes somos?</h2><p>Adolfina Decoracion surgio como u
 
 class Producto {
     constructor(id, nombre, precio, cantidad, tamaño) {
-        this.id= id;
+        this.id = id;
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
@@ -22,7 +21,7 @@ const contenedorCarrito = document.getElementById('carrito-contenedor')
 
 const botonVaciar = document.getElementById('vaciar-carrito')
 
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     localStorage.getItem('carrito') && (carrito = JSON.parse(localStorage.getItem('carrito')))
     actualizarCarrito();
 })
@@ -30,12 +29,31 @@ const botonVaciar = document.getElementById('vaciar-carrito')
 
 
 botonVaciar.addEventListener('click', () => {
-    carrito.length = 0
-    actualizarCarrito()
+    Swal.fire({
+        title: 'Estas seguro que queres borrar el carrito de compras?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Eliminado!',
+                'El carrito de compras fue eliminado con exito.',
+                'success'
+            )
+            eliminar()
+        }
+    })
 })
 
+function eliminar() {
+    carrito.length = 0
+    actualizarCarrito()
+}
 
-const contadorCarrito =document.getElementById('contadorCarrito')
+const contadorCarrito = document.getElementById('contadorCarrito')
 
 const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
@@ -47,35 +65,35 @@ let carrito = []
 
 let catalogoProductos = [];
 
-catalogoProductos.push(new Producto(1, "Almohadon de pana ", 700, 1, "40x40 cm", img= 'imagenes/almohadonpana.jpg'));
-catalogoProductos.push(new Producto(2, "Almohadon de tusor ", 700, 1, "40x40 cm", img= 'imagenes/almtusor.jpg'));
-catalogoProductos.push(new Producto(3, "Almohadon de gasa ", 800, 1, "50x30 cm",img= 'imagenes/gasaalm.jpg'));
-catalogoProductos.push(new Producto(4, "Almohada para cama ", 1300, 1, "50x40 cm", img= 'imagenes/almcama.jpg'));
-catalogoProductos.push(new Producto(5, "Cortinas de gasa ", 13000, 1, "200x150 cm", img= 'imagenes/cortinas.jpg'));
-catalogoProductos.push(new Producto(6, "Cortinas de tusor ", 15000, 1, "200x150 cm", img= 'imagenes/cortinas2.jpg'));
+catalogoProductos.push(new Producto(1, "Almohadon de pana ", 700, 1, "40x40 cm", img = 'imagenes/almohadonpana.jpg'));
+catalogoProductos.push(new Producto(2, "Almohadon de tusor ", 700, 1, "40x40 cm", img = 'imagenes/almtusor.jpg'));
+catalogoProductos.push(new Producto(3, "Almohadon de gasa ", 800, 1, "50x30 cm", img = 'imagenes/gasaalm.jpg'));
+catalogoProductos.push(new Producto(4, "Almohada para cama ", 1300, 1, "50x40 cm", img = 'imagenes/almcama.jpg'));
+catalogoProductos.push(new Producto(5, "Cortinas de gasa ", 13000, 1, "200x150 cm", img = 'imagenes/cortinas.jpg'));
+catalogoProductos.push(new Producto(6, "Cortinas de tusor ", 15000, 1, "200x150 cm", img = 'imagenes/cortinas2.jpg'));
 catalogoProductos.push(new Producto(7, "Cortinas de lino ", 17000, 1, "200x150 cm"));
 catalogoProductos.push(new Producto(8, "Cortinas de Blackout ", 18000, 1, "200x150 cm"));
-catalogoProductos.push(new Producto(9, "Cortinas de baño ", 5000, 1, "180x150 cm",img='imagenes/coortbaño.jpg'));
-catalogoProductos.push(new Producto(10, "Mantel de tusor ", 5000, 1, "200x150 cm",img= 'imagenes/manteltuss.jpg'));
+catalogoProductos.push(new Producto(9, "Cortinas de baño ", 5000, 1, "180x150 cm", img = 'imagenes/coortbaño.jpg'));
+catalogoProductos.push(new Producto(10, "Mantel de tusor ", 5000, 1, "200x150 cm", img = 'imagenes/manteltuss.jpg'));
 catalogoProductos.push(new Producto(11, "Mantel waffle ", 7000, 1, "200x150 cm"));
-catalogoProductos.push(new Producto(12, "Mantel gasa ", 5000, 1, "200x150 cm",img= 'imagenes/gasam.jpg'));
-catalogoProductos.push(new Producto(13, "Delantal ", 1500, 1, "70x40 cm",img= 'imagenes/delantal.jpg'));
-catalogoProductos.push(new Producto(14, "Juego de servilletas x 8 ", 4000, 1, "40x40 cm",img= 'imagenes/servilleta.jpg'));
-catalogoProductos.push(new Producto(15, "Juego sabanas para cama king ", 20000, 1, "200 x 200 cm",img= 'imagenes/cama.jpg'));
-catalogoProductos.push(new Producto(16, "Juego sabanas para cama Queen ", 18000, 1, "160 x 200 cm",img= 'imagenes/cama2.jpg'));
-catalogoProductos.push(new Producto(17, "Juego sabanas para cama 2 plazas y media ", 14000, 1, "140 x 190cm",img= 'imagenes/cama.jpg'));
-catalogoProductos.push(new Producto(18, "Juego sabanas para cama 1 plaza y media ", 10000, 1, "190 x 090 cm",img= 'imagenes/cama1p.jpg'));
-catalogoProductos.push(new Producto(19, "Pie de cama ", 9000, 1, "200 x 150 cm",img= 'imagenes/piecama.jpg'));
+catalogoProductos.push(new Producto(12, "Mantel gasa ", 5000, 1, "200x150 cm", img = 'imagenes/gasam.jpg'));
+catalogoProductos.push(new Producto(13, "Delantal ", 1500, 1, "70x40 cm", img = 'imagenes/delantal.jpg'));
+catalogoProductos.push(new Producto(14, "Juego de servilletas x 8 ", 4000, 1, "40x40 cm", img = 'imagenes/servilleta.jpg'));
+catalogoProductos.push(new Producto(15, "Juego sabanas para cama king ", 20000, 1, "200 x 200 cm", img = 'imagenes/cama.jpg'));
+catalogoProductos.push(new Producto(16, "Juego sabanas para cama Queen ", 18000, 1, "160 x 200 cm", img = 'imagenes/cama2.jpg'));
+catalogoProductos.push(new Producto(17, "Juego sabanas para cama 2 plazas y media ", 14000, 1, "140 x 190cm", img = 'imagenes/cama.jpg'));
+catalogoProductos.push(new Producto(18, "Juego sabanas para cama 1 plaza y media ", 10000, 1, "190 x 090 cm", img = 'imagenes/cama1p.jpg'));
+catalogoProductos.push(new Producto(19, "Pie de cama ", 9000, 1, "200 x 150 cm", img = 'imagenes/piecama.jpg'));
 
 //////
 
-    
-    catalogoProductos.forEach((producto) => {
-        const div = document.createElement('div')
-        div.className = "col-md-4 mt-3";
-        div.id = `div-${producto.id}`;
-        div.classList.add('producto')
-        div.innerHTML =  `
+
+catalogoProductos.forEach((producto) => {
+    const div = document.createElement('div')
+    div.className = "col-md-4 mt-3";
+    div.id = `div-${producto.id}`;
+    div.classList.add('producto')
+    div.innerHTML = `
     <div class="card">
         <div class="card-body">
         <img src=${producto.img} alt= "">
@@ -85,31 +103,38 @@ catalogoProductos.push(new Producto(19, "Pie de cama ", 9000, 1, "200 x 150 cm",
         <button id= "agregar${producto.id}" class="boton-agregar">Agregar <i class = "fas fa-shopping-cart"></i></button>
         </div>
     </div>`
-    
+
     //  <img src= ${producto.img} alt="">
-        contenedorProductos.appendChild(div);
+    contenedorProductos.appendChild(div);
 
-        const boton = document.getElementById(`agregar${producto.id}`)
+    const boton = document.getElementById(`agregar${producto.id}`)
 
-        boton.addEventListener('click' , () => {
-            agregarCarrito(producto.id)
-        })
+    boton.addEventListener('click', () => {
+        Toastify({
+        text: `Agregaste ${producto.nombre} al carrito de compras`,
+        className: "info",
+        style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+    }).showToast();
+        agregarCarrito(producto.id)
     })
+})
 
 
 ////
 
 
 const agregarCarrito = (prodId) => {
-    const existe = carrito.some (prod => prod.id === prodId)
-    if(existe){
-        const prod = carrito.map (prod => {
+    const existe = carrito.some(prod => prod.id === prodId)
+    if (existe) {
+        const prod = carrito.map(prod => {
             prod.id === prodId && prod.cantidad++
-            
+
         })
-    }else{
-    const item =catalogoProductos.find ((prod) => prod.id === prodId)
-    carrito.push(item)
+    } else {
+        const item = catalogoProductos.find((prod) => prod.id === prodId)
+        carrito.push(item)
     }
     actualizarCarrito()
 }
@@ -122,7 +147,7 @@ const agregarCarrito = (prodId) => {
 
 
 const eliminarDelCarrito = (prodId) => {
-    const item =carrito.find((prod) => prod.id === prodId)
+    const item = carrito.find((prod) => prod.id === prodId)
     const indice = carrito.indexOf(item)
     carrito.splice(indice, 1)
     actualizarCarrito()
@@ -133,21 +158,21 @@ const actualizarCarrito = () => {
     contenedorCarrito.innerHTML = ""
 
     carrito.forEach((prod) => {
-    const div =document.createElement('div')
-    div.className= ('productoEnCarrito')
-    div.innerHTML= `
+        const div = document.createElement('div')
+        div.className = ('productoEnCarrito')
+        div.innerHTML = `
     <p>${prod.nombre}</p>
     <p>Precio : ${prod.precio}</p>
     <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
     <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>`
 
-    contenedorCarrito.appendChild(div)
+        contenedorCarrito.appendChild(div)
 
-    localStorage.setItem('carrito', JSON.stringify(carrito))
+        localStorage.setItem('carrito', JSON.stringify(carrito))
     })
 
     contadorCarrito.innerText = carrito.length
     console.log(carrito)
-    precioTotal.innerText = carrito.reduce ((acc , prod) => acc + prod.cantidad * prod.precio, 0 )
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
     //rest parameters
 }

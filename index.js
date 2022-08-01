@@ -96,7 +96,7 @@ catalogoProductos.forEach((producto) => {
     div.innerHTML = `
     <div class="card">
         <div class="card-body">
-        <img src=${producto.img} alt= "">
+        <img src=${producto.img} alt= precio>
         <h3 class="card-title">${producto.id}.${producto.nombre}</h5>
         <p class="card-text">Precio: <b>$ ${producto.precio}</b></p>
         <p class="card-text">Tamaño: <b>${producto.tamaño}<b></p>
@@ -104,7 +104,7 @@ catalogoProductos.forEach((producto) => {
         </div>
     </div>`
 
-    //  <img src= ${producto.img} alt="">
+    //  <img src= ${producto.img} alt=precio>
     contenedorProductos.appendChild(div);
 
     const boton = document.getElementById(`agregar${producto.id}`)
@@ -138,12 +138,6 @@ const agregarCarrito = (prodId) => {
     }
     actualizarCarrito()
 }
-// existe ?? const prod = carrito.map (prod => {
-//             prod.id === prodId && prod.cantidad++}) 
-//     : const item =catalogoProductos.find ((prod) => prod.id === prodId)
-//     carrito.push(item);
-//     actualizarCarrito()
-// dudas sobre const y operadores ternarios
 
 
 const eliminarDelCarrito = (prodId) => {
@@ -155,7 +149,7 @@ const eliminarDelCarrito = (prodId) => {
 }
 
 const actualizarCarrito = () => {
-    contenedorCarrito.innerHTML = ""
+    contenedorCarrito.innerHTML = precio
 
     carrito.forEach((prod) => {
         const div = document.createElement('div')

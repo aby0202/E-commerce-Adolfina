@@ -8,7 +8,7 @@ texto.innerHTML = "<h2>¿Quienes somos?</h2><p>Adolfina Decoracion surgio como u
 
 const contenedorProductos = document.getElementById("contenedor-productos")
 
-function obtenerProducto(){
+async function obtenerProducto(){
     fetch("https://62e746fe0e5d74566af1490e.mockapi.io/productos")
     .then((response) => {
         console.log(response);
@@ -53,7 +53,6 @@ function obtenerProducto(){
     let data = [];
     
 }
-
 
 obtenerProducto()
 //me muestra la info del producto por esto

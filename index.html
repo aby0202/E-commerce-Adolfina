@@ -10,19 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/logo-03.png">
     <title>Document</title>
 </head>
 
-<body>
+<body class="fondo">
     <header id="header"></header>
 
     <!-------INICIO DEL NAVBAR-------->
@@ -36,24 +37,24 @@
         <div class="collapse navbar-collapse p-3 justify-content-center" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="inicio.html">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Perfil.html">Nosotras</a>
+                    <a class="nav-link" href="#texto">Nosotras</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="media.html">Productos</a>
+                    <a class="nav-link" href="#prod">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="discografia.html">Contacto</a>
+                    <a class="nav-link" href="#footer">Contacto</a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>
     <!------FIN DEL NAVBAR------>
 
-    
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center texto" id="texto">
@@ -107,12 +108,15 @@
             </div>
         </div>
     </div>
-    
     <!-- FIN DEL CARROUSEL -->
+    <h2 class="prod" id="prod">Productos</h2>
+    
+    <div class="contenedorProductos">
+        <div class="row" id="contenedor-productos"></div>
+    </div>
 
-    <div class="row" id="contenedor-productos"></div>
-
-    <button id="boton-carrito" class="botonCarrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span>
+    <button id="boton-carrito" class="botonCarrito"><i class="fas fa-shopping-cart"></i><span
+            id="contadorCarrito">0</span>
     </button>
 
     <div class="modal-contenedor">
@@ -125,6 +129,59 @@
         </div>
     </div>
 
+    <!-- INICIO FOOTER -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="cubo">
+                        <div class="medios">
+                            <h5>Medios de pago</h5>
+                                <div class="d-flex flex-wrap">
+                                    <img src="imagenes/pago/mercadopago.png" alt="mercado pago">
+                                    <img src="imagenes/pago/american-express.png" alt="american-express">
+                                    <img src="imagenes/pago/argencard.png" alt="argencard">
+                                    <img src="imagenes/pago/cabal.png" alt="cabal">
+                                    <img src="imagenes/pago/diners-club.png" alt="diners-club">
+                                    <img src="imagenes/pago/maestro.png" alt="maestro">
+                                    <img src="imagenes/pago/naranja.png" alt="naranja">
+                                    <img src="imagenes/pago/nativa.png" alt="nativa">
+                                    <img src="imagenes/pago/visa.png" alt="visa">
+                                    <img src="imagenes/pago/rapipago.png" alt="rapipago">
+                                    <img src="imagenes/pago/pagofacil.png" alt="pagofacil">
+                                    <img src="imagenes/pago/acordar.png" alt="acordar">
+                                    <img src="imagenes/pago/deposito.png" alt="deposito">
+                                    <img src="imagenes/pago/efectivo.png" alt="efectivo">
+                                </div>
+                        </div>  
+                        <div class="medios">
+                                <h5>Medios de envio</h5>
+                                <div class="d-flex flex-wrap metodos">
+                                    <img src="imagenes/correo-argentino.png" alt="correo Argentino">
+                                    <img src="imagenes/retiro-local.png" alt="retiro en el local">
+                                    <img src="imagenes/pago/acordar.png" alt="acordar">
+                                </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="cubo">
+                    <div class="redes">
+                        <h5>Nuestras redes sociales</h5>
+                        <div>
+                            <a href="https://www.facebook.com/Adolfina.decoracion" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/adolfina.decor/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <h5>Contacto</h5>
+                        <div><a href="mailto:adolfinadecorac@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> adolfinadecorac@gmail.com</a></div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FINAL FOOTER -->
     <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

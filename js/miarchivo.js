@@ -55,7 +55,7 @@ async function obtenerProducto(){
 }
 
 obtenerProducto()
-//me muestra la info del producto por esto
+//me muestra la info del producto
 
 
 

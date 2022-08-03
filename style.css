@@ -90,9 +90,7 @@
 }
 
 .fondo {
-  background-image: url("imagenes/fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #d4ccc4;
 }
 
 header {
@@ -108,7 +106,7 @@ header h1 {
 }
 
 .bg-dark {
-  background-color: rgba(211, 168, 154, 0.747) !important;
+  background-color: #937f6b !important;
 }
 
 li .nav-item a {
@@ -124,15 +122,18 @@ li .nav-item a {
 }
 
 .texto h2 {
-  background-color: rgba(211, 168, 154, 0.747);
+  background-color: #c0b6a8;
   font-family: "Nanum Myeongjo", serif;
   font-size: 3rem;
+  box-shadow: 15px 15px 15px grey;
 }
 
 .texto p {
   font-family: "Pinyon Script", cursive;
   font-size: 2rem;
   line-height: 55px;
+  text-shadow: 15px 15px 15px grey;
+  padding: 20px;
 }
 
 img {
@@ -145,6 +146,60 @@ img {
 }
 .card p {
   font-family: "Julius Sans One", sans-serif;
+}
+
+.footer {
+  padding: 40px;
+  margin: 30px;
+  border: 1px solid black;
+}
+
+footer {
+  background-color: #f0ecdc;
+}
+
+.cubo {
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cubo h5 {
+  font-family: "Julius Sans One", sans-serif;
+}
+.cubo .medios img {
+  width: 50px;
+  padding: 2px;
+}
+.cubo .redes {
+  font-size: 30px;
+}
+.cubo .redes a {
+  padding: 5px;
+  color: rgba(30, 30, 31, 0.74);
+}
+.cubo .contacto {
+  margin-top: 25px;
+}
+.cubo .contacto a {
+  padding: 5px;
+  color: rgba(45, 46, 46, 0.74);
+  text-decoration: none;
+}
+
+.prod {
+  background-color: #937f6b;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  padding: 30px;
+  color: rgba(235, 235, 235, 0.7803921569);
+  margin-bottom: 50px;
+}
+
+.contenedorProductos {
+  background-color: #f0ecdc;
+  margin: auto;
+  width: 80%;
+  border: rgba(87, 87, 87, 0.788) 1px solid;
 }
 
 /*# sourceMappingURL=style.css.map */

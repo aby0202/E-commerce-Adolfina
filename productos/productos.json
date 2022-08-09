@@ -4,6 +4,7 @@
     "nombre": "Almohadon de pana ",
     "precio": "700",
     "descripcion": "medida de 40x40 cm",
+    "cantidad":"1",
     "id": "1"
   },
   {
@@ -11,6 +12,7 @@
     "nombre": "Almohadon de tusor",
     "precio": "700",
     "descripcion": "medida de 40x40 cm",
+    "cantidad":"1",
     "id": "2"
   },
   {
@@ -18,6 +20,7 @@
     "nombre": "Almohadon de gasa",
     "precio": "800",
     "descripcion": "medida de 50x30 cm",
+    "cantidad":"1",
     "id": "3"
   },
   {
@@ -25,6 +28,7 @@
     "nombre": "Almohada para cama ",
     "precio": "1300",
     "descripcion": "medida de 50x40 cm",
+    "cantidad":"1",
     "id": "4"
   },
   {
@@ -32,6 +36,7 @@
     "nombre": "Cortinas de gasa ",
     "precio": "13000",
     "descripcion": "medida de 150x200 cm",
+    "cantidad":"1",
     "id": "5"
   },
   {
@@ -39,6 +44,7 @@
     "nombre": "Cortinas de tusor ",
     "precio": "15000",
     "descripcion": "medida de 150x200 cm",
+    "cantidad":"1",
     "id": "6"
   },
   {
@@ -46,6 +52,7 @@
     "nombre": "Cortinas de lino",
     "precio": "17000",
     "descripcion": "medida de 150x200 cm",
+    "cantidad":"1",
     "id": "7"
   },
   {
@@ -53,6 +60,7 @@
     "nombre": "Cortinas de baño",
     "precio": "5000",
     "descripcion": "medida de 180x150 cm",
+    "cantidad":"1",
     "id": "8"
   },
   {
@@ -60,6 +68,7 @@
     "nombre": "Mantel de tusor",
     "precio": "5000",
     "descripcion": "medida de 200x150 cm",
+    "cantidad":"1",
     "id": "9"
   },
   {
@@ -67,6 +76,7 @@
     "nombre": "Mantel waffle",
     "precio": "7000",
     "descripcion": "medida de 200x150 cm",
+    "cantidad":"1",
     "id": "10"
   },
   {
@@ -74,6 +84,7 @@
     "nombre": "Mantel gasa",
     "precio": "5000",
     "descripcion": "medida de 200x150 cm",
+    "cantidad":"1",
     "id": "11"
   },
   {
@@ -81,6 +92,7 @@
     "nombre": "Delantal ",
     "precio": "1500",
     "descripcion": "medida de 70x40 cm",
+    "cantidad":"1",
     "id": "12"
   },
   {
@@ -88,6 +100,7 @@
     "nombre": "Juego de servilletas x 8",
     "precio": "4000",
     "descripcion": "medida de 40x40 cm",
+    "cantidad":"1",
     "id": "13"
   },
   {
@@ -95,6 +108,7 @@
     "nombre": "Juego sabanas para cama king",
     "precio": "20000",
     "descripcion": "medida de 200x200",
+    "cantidad":"1",
     "id": "14"
   },
   {
@@ -102,6 +116,7 @@
     "nombre": "Juego sabanas para cama Queen ",
     "precio": "18000",
     "descripcion": "medida de 160x200 cm",
+    "cantidad":"1",
     "id": "15"
   },
   {
@@ -109,6 +124,7 @@
     "nombre": "Juego sabanas para cama 2 plazas y media",
     "precio": "14000",
     "descripcion": "medida de 190x140 cm",
+    "cantidad":"1",
     "id": "16"
   },
   {
@@ -116,6 +132,7 @@
     "nombre": "Juego sabanas para cama 1 plaza y media ",
     "precio": "10000",
     "descripcion": "medida de 90x190 cm",
+    "cantidad":"1",
     "id": "17"
   },
   {
@@ -123,6 +140,7 @@
     "nombre": "Pie de cama ",
     "precio": "10000",
     "descripcion": "medida de 150x200 cm",
+    "cantidad":"1",
     "id": "18"
   }
 ]
